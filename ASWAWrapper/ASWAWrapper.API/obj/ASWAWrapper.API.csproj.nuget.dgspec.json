@@ -58,6 +58,10 @@
             "Swashbuckle.AspNetCore.SwaggerGen": {
               "target": "Package",
               "version": "[6.2.2, )"
+            },
+            "Swashbuckle.AspNetCore.SwaggerUI": {
+              "target": "Package",
+              "version": "[6.2.2, )"
             }
           },
           "imports": [

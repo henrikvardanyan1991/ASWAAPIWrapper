@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "ASWAWrapper.Models/1.0.0": {
+        "runtime": {
+          "ASWAWrapper.Models.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ASWAWrapper.Models/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
