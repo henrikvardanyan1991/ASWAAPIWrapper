@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace ArcaAPIGate.Models
+namespace ASWAWrapper.Models
 {
-    public enum LogTypeEnum
+    public enum LogType
     {
         Error,
         Text,

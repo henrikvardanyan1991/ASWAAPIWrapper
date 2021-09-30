@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "JFgrvc3D59OYxYfpcXA3UkeOhJU4I6Id0DDBqBQD1cnKV38crlbL6IRNvdNpk64y+iDIGjSA1etsuMFZfo5BHw==",
+  "dgSpecHash": "yKPjniMVxMh71sKItEzTO76j0vjJdOpbXqiEpZ6u1C2rPg1U3KexLFro0F39rr0MYepcnCTM4CJJcIeagCgHtQ==",
   "success": true,
   "projectFilePath": "D:\\ASWAAPIWrapper\\ASWAWrapper\\ASWAWrapper.Common\\ASWAWrapper.Common.csproj",
   "expectedPackageFiles": [
@@ -11,6 +11,7 @@
     "C:\\Users\\artavazd afrikyan\\.nuget\\packages\\microsoft.extensions.fileproviders.abstractions\\5.0.0\\microsoft.extensions.fileproviders.abstractions.5.0.0.nupkg.sha512",
     "C:\\Users\\artavazd afrikyan\\.nuget\\packages\\microsoft.extensions.hosting.abstractions\\5.0.0\\microsoft.extensions.hosting.abstractions.5.0.0.nupkg.sha512",
     "C:\\Users\\artavazd afrikyan\\.nuget\\packages\\microsoft.extensions.primitives\\5.0.0\\microsoft.extensions.primitives.5.0.0.nupkg.sha512",
+    "C:\\Users\\artavazd afrikyan\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.text.encodings.web\\4.5.0\\system.text.encodings.web.4.5.0.nupkg.sha512"
   ],
   "logs": []

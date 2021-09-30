@@ -9,3 +9,15 @@ D:\ASWAAPIWarapper\ASWAWrapper\ASWAWrapper.Models\obj\Debug\net5.0\ASWAWrapper.M
 D:\ASWAAPIWarapper\ASWAWrapper\ASWAWrapper.Models\obj\Debug\net5.0\ASWAWrapper.Models.dll
 D:\ASWAAPIWarapper\ASWAWrapper\ASWAWrapper.Models\obj\Debug\net5.0\ref\ASWAWrapper.Models.dll
 D:\ASWAAPIWarapper\ASWAWrapper\ASWAWrapper.Models\obj\Debug\net5.0\ASWAWrapper.Models.pdb
+D:\ASWAAPIWrapper\ASWAWrapper\ASWAWrapper.Models\bin\Debug\net5.0\ASWAWrapper.Models.deps.json
+D:\ASWAAPIWrapper\ASWAWrapper\ASWAWrapper.Models\bin\Debug\net5.0\ASWAWrapper.Models.dll
+D:\ASWAAPIWrapper\ASWAWrapper\ASWAWrapper.Models\bin\Debug\net5.0\ref\ASWAWrapper.Models.dll
+D:\ASWAAPIWrapper\ASWAWrapper\ASWAWrapper.Models\bin\Debug\net5.0\ASWAWrapper.Models.pdb
+D:\ASWAAPIWrapper\ASWAWrapper\ASWAWrapper.Models\obj\Debug\net5.0\ASWAWrapper.Models.GeneratedMSBuildEditorConfig.editorconfig
+D:\ASWAAPIWrapper\ASWAWrapper\ASWAWrapper.Models\obj\Debug\net5.0\ASWAWrapper.Models.AssemblyInfoInputs.cache
+D:\ASWAAPIWrapper\ASWAWrapper\ASWAWrapper.Models\obj\Debug\net5.0\ASWAWrapper.Models.AssemblyInfo.cs
+D:\ASWAAPIWrapper\ASWAWrapper\ASWAWrapper.Models\obj\Debug\net5.0\ASWAWrapper.Models.csproj.CoreCompileInputs.cache
+D:\ASWAAPIWrapper\ASWAWrapper\ASWAWrapper.Models\obj\Debug\net5.0\ASWAWrapper.Models.dll
+D:\ASWAAPIWrapper\ASWAWrapper\ASWAWrapper.Models\obj\Debug\net5.0\ref\ASWAWrapper.Models.dll
+D:\ASWAAPIWrapper\ASWAWrapper\ASWAWrapper.Models\obj\Debug\net5.0\ASWAWrapper.Models.pdb
+D:\ASWAAPIWrapper\ASWAWrapper\ASWAWrapper.Models\obj\Debug\net5.0\ASWAWrapper.Models.csprojAssemblyReference.cache

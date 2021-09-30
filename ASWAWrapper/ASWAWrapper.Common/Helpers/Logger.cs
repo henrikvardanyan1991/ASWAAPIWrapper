@@ -1,4 +1,4 @@
-﻿using ArcaAPIGate.Models;
+﻿using ASWAWrapper.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Hosting;
 using System;
@@ -17,7 +17,7 @@ namespace ASWAWrapper.Common.Helpers
             _httpContextAccessor = httpContextAccessor;
         }
 
-        public void Log(LogTypeEnum logType, string message = "", Exception exception = null)
+        public void Log(LogType logType, string message = "", Exception exception = null)
         {
             try
             {
@@ -28,7 +28,7 @@ namespace ASWAWrapper.Common.Helpers
 
                 switch (logType)
                 {
-                    case LogTypeEnum.Error:
+                    case LogType.Error:
 
                         if (exception != null)
                         {
@@ -47,9 +47,9 @@ namespace ASWAWrapper.Common.Helpers
                         }
 
                         break;
-                    case LogTypeEnum.Warning:
+                    case LogType.Warning:
                         break;
-                    case LogTypeEnum.Text:
+                    case LogType.Text:
                         break;
                     default:
                         break;

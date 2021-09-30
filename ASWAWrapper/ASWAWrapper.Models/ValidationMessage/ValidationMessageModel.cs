@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-namespace ArcaAPIGate.Models
+namespace ASWAWrapper.Models
 {
     public class ValidationMessageModel
     {

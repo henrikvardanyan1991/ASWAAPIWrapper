@@ -1,6 +1,6 @@
-﻿using ArcaAPIGate.Models;
-using ASWAWrapper.Common.Exceptions;
+﻿using ASWAWrapper.Common.Exceptions;
 using ASWAWrapper.Common.Helpers;
+using ASWAWrapper.Models;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Diagnostics;
 using Microsoft.AspNetCore.Http;
@@ -75,7 +75,7 @@ namespace ASWAWrapper.API.Extensions
                         {
                             if (needLogging)
                             {
-                                ((Logger)logger).Log(LogTypeEnum.Error, exception: exception);
+                                ((Logger)logger).Log(LogType.Error, exception: exception);
 
                             }
                         }
@@ -92,7 +92,7 @@ namespace ASWAWrapper.API.Extensions
                     {
                         if (logger != null)
                         {
-                            ((Logger)logger).Log(LogTypeEnum.Error, exception: ex);
+                            ((Logger)logger).Log(LogType.Error, exception: ex);
                         }
                     }
                 });
