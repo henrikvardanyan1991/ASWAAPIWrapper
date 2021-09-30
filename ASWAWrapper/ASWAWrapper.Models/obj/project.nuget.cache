@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "FJJW5Z4FnVP7aIx89oF+hiNNBG8YpVxnZDCSzlYvoZv0zzNUeYdWIovcCxh/BnNOO4a7OZj8M8AIsXRLbbtLdA==",
+  "dgSpecHash": "GRhQA74ttnp1Z/5192RRp9DD9A/9mfFPjqZDKy82F9FoNScdL2t0BqsVX47+Vh6w+iWat+dBXX2kPux7zE1Lww==",
   "success": true,
-  "projectFilePath": "D:\\ASWAAPIWarapper\\ASWAWrapper\\ASWAWrapper.Models\\ASWAWrapper.Models.csproj",
+  "projectFilePath": "D:\\ASWAAPIWrapper\\ASWAWrapper\\ASWAWrapper.Models\\ASWAWrapper.Models.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

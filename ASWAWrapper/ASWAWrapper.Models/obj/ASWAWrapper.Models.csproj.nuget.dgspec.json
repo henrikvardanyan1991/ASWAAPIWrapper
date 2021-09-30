@@ -1,31 +1,29 @@
 {
   "format": 1,
   "restore": {
-    "D:\\ASWAAPIWarapper\\ASWAWrapper\\ASWAWrapper.Models\\ASWAWrapper.Models.csproj": {}
+    "D:\\ASWAAPIWrapper\\ASWAWrapper\\ASWAWrapper.Models\\ASWAWrapper.Models.csproj": {}
   },
   "projects": {
-    "D:\\ASWAAPIWarapper\\ASWAWrapper\\ASWAWrapper.Models\\ASWAWrapper.Models.csproj": {
+    "D:\\ASWAAPIWrapper\\ASWAWrapper\\ASWAWrapper.Models\\ASWAWrapper.Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\ASWAAPIWarapper\\ASWAWrapper\\ASWAWrapper.Models\\ASWAWrapper.Models.csproj",
+        "projectUniqueName": "D:\\ASWAAPIWrapper\\ASWAWrapper\\ASWAWrapper.Models\\ASWAWrapper.Models.csproj",
         "projectName": "ASWAWrapper.Models",
-        "projectPath": "D:\\ASWAAPIWarapper\\ASWAWrapper\\ASWAWrapper.Models\\ASWAWrapper.Models.csproj",
-        "packagesPath": "C:\\Users\\Henrik\\.nuget\\packages\\",
-        "outputPath": "D:\\ASWAAPIWarapper\\ASWAWrapper\\ASWAWrapper.Models\\obj\\",
+        "projectPath": "D:\\ASWAAPIWrapper\\ASWAWrapper\\ASWAWrapper.Models\\ASWAWrapper.Models.csproj",
+        "packagesPath": "C:\\Users\\artavazd afrikyan\\.nuget\\packages\\",
+        "outputPath": "D:\\ASWAAPIWrapper\\ASWAWrapper\\ASWAWrapper.Models\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Henrik\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\artavazd afrikyan\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "D:\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -58,7 +56,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -1106,42 +1106,40 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Henrik\\.nuget\\packages\\": {},
+    "C:\\Users\\artavazd afrikyan\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\ASWAAPIWarapper\\ASWAWrapper\\ASWAWrapper.API\\ASWAWrapper.API.csproj",
+      "projectUniqueName": "D:\\ASWAAPIWrapper\\ASWAWrapper\\ASWAWrapper.API\\ASWAWrapper.API.csproj",
       "projectName": "ASWAWrapper.API",
-      "projectPath": "D:\\ASWAAPIWarapper\\ASWAWrapper\\ASWAWrapper.API\\ASWAWrapper.API.csproj",
-      "packagesPath": "C:\\Users\\Henrik\\.nuget\\packages\\",
-      "outputPath": "D:\\ASWAAPIWarapper\\ASWAWrapper\\ASWAWrapper.API\\obj\\",
+      "projectPath": "D:\\ASWAAPIWrapper\\ASWAWrapper\\ASWAWrapper.API\\ASWAWrapper.API.csproj",
+      "packagesPath": "C:\\Users\\artavazd afrikyan\\.nuget\\packages\\",
+      "outputPath": "D:\\ASWAAPIWrapper\\ASWAWrapper\\ASWAWrapper.API\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Henrik\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\artavazd afrikyan\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "D:\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "D:\\ASWAAPIWarapper\\ASWAWrapper\\ASWAWrapper.Common\\ASWAWrapper.Common.csproj": {
-              "projectPath": "D:\\ASWAAPIWarapper\\ASWAWrapper\\ASWAWrapper.Common\\ASWAWrapper.Common.csproj"
+            "D:\\ASWAAPIWrapper\\ASWAWrapper\\ASWAWrapper.Common\\ASWAWrapper.Common.csproj": {
+              "projectPath": "D:\\ASWAAPIWrapper\\ASWAWrapper\\ASWAWrapper.Common\\ASWAWrapper.Common.csproj"
             },
-            "D:\\ASWAAPIWarapper\\ASWAWrapper\\ASWAWrapper.Models\\ASWAWrapper.Models.csproj": {
-              "projectPath": "D:\\ASWAAPIWarapper\\ASWAWrapper\\ASWAWrapper.Models\\ASWAWrapper.Models.csproj"
+            "D:\\ASWAAPIWrapper\\ASWAWrapper\\ASWAWrapper.Models\\ASWAWrapper.Models.csproj": {
+              "projectPath": "D:\\ASWAAPIWrapper\\ASWAWrapper\\ASWAWrapper.Models\\ASWAWrapper.Models.csproj"
             }
           }
         }
@@ -1183,22 +1181,8 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Access to the path 'D:\\System Volume Information' is denied."
-    },
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Access to the path 'D:\\System Volume Information' is denied."
-    }
-  ]
+  }
 }
