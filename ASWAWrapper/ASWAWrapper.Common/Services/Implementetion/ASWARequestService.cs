@@ -130,9 +130,11 @@ namespace ASWAWrapper.Common.Services
 
         }
 
+
+
         public async Task PayAsync(PayRequestModel model)
         {
-            string action = $"/webservicekiosk/payment/{model.OrderID}";
+            string action = $"/webservicekiosk/payment/{model.Token}";
             await PostAsync(model, action);
         }
 
@@ -180,12 +182,10 @@ namespace ASWAWrapper.Common.Services
                             _logger.Log(LogType.Error, responseString);
                             if (response.StatusCode == System.Net.HttpStatusCode.InternalServerError)
                             {
-                                ProblemReporter.ReportServiceUnavailable(responseString);
+                                ProblemReporter.ReportInternalServerError(responseString);
                             }
                         }
-
                         responseString = await response.Content.ReadAsStringAsync();
-
                     }
                 }
 
@@ -225,12 +225,12 @@ namespace ASWAWrapper.Common.Services
                         var response = await httpClient.PostAsync($"{BaseUrl}{action}", httpContent);
                         if (!response.IsSuccessStatusCode)
                         {
-                            //responseString = await response.Content.ReadAsStringAsync();
-                            //_logger.Log(LogType.Error, responseString);
-                            //if (response.StatusCode == System.Net.HttpStatusCode.InternalServerError)
-                            //{
-                            //    ProblemReporter.ReportServiceUnavailable(responseString);
-                            //}
+                            responseString = await response.Content.ReadAsStringAsync();
+                            _logger.Log(LogType.Error, responseString);
+                            if (response.StatusCode == System.Net.HttpStatusCode.InternalServerError)
+                            {
+                                ProblemReporter.ReportInternalServerError(responseString);
+                            }
 
                         }
 
@@ -281,7 +281,7 @@ namespace ASWAWrapper.Common.Services
                             _logger.Log(LogType.Error, responseString);
                             if (response.StatusCode == System.Net.HttpStatusCode.InternalServerError)
                             {
-                                ProblemReporter.ReportServiceUnavailable(responseString);
+                                ProblemReporter.ReportInternalServerError(responseString);
                             }
 
                             //ProblemReporter.ReportUnprocessableEntity(responseString);

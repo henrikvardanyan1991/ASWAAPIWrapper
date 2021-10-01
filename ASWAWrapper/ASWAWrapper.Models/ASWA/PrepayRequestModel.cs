@@ -1,5 +1,4 @@
-﻿using Newtonsoft.Json;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -7,11 +6,9 @@ using System.Threading.Tasks;
 
 namespace ASWAWrapper.Models
 {
-    public class PayRequestModel
+    public class PrepayRequestModel
     {
-        [JsonProperty("orderId")]
+        public int InsuranceCompanyID { get; set; }
         public string Token { get; set; }
-        [JsonProperty("amount")]
-        public string Amount { get; set; }
     }
 }

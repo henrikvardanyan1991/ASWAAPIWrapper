@@ -34,17 +34,38 @@ namespace ASWAWrapper.API.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> GetInsuranceCompaniesAsync([FromQuery] string token)
+        public async Task<IActionResult> GetInsuranceCompanies([FromQuery] string token)
         {
             var response = await _aswaRequestService.GetInsuranceCompaniesAsync(token);
             return Ok(response);
         }
 
         [HttpGet]
-        public async Task<IActionResult> GetBonusMalusAsync([FromQuery] int policyHolderId)
+        public async Task<IActionResult> GetBonusMalus([FromQuery] int policyHolderId)
         {
             var response = await _aswaRequestService.GetBonusMalusAsync(policyHolderId);
             return Ok(response);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Prepay([FromBody] PrepayRequestModel model)
+        {
+            var response = await _aswaRequestService.PrepayAsync(model.Token, model.InsuranceCompanyID);
+            return Ok(response);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Pay([FromBody] PayRequestModel model)
+        {
+            await _aswaRequestService.PayAsync(model);
+            return Ok();
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> CheckPay([FromQuery] string token)
+        {
+            var respnse = await _aswaRequestService.CheckPayAsync(token);
+            return Ok(respnse);
         }
     }
 }
