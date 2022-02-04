@@ -12,6 +12,7 @@ namespace ASWAWrapper.Common.Services
         Task<GetVehicleResponseModel> GetVehicleAsync(GetVehicleRequestModel model);
 
         Task CheckContractAsync(CheckContractRequestModel model);
+       // Task<string> GetContractStatusAsync(string token);
 
         Task<List<GetInsuranceCompanyResponseModel>> GetInsuranceCompaniesAsync(string token);
 
@@ -20,6 +21,8 @@ namespace ASWAWrapper.Common.Services
         Task<string> PrepayAsync(string token, int companyID);
 
         Task<bool> CheckPayAsync(string token);
+
+        Task<string> GetContractStatusAsync(string token);
 
         Task PayAsync(PayRequestModel model);
     }

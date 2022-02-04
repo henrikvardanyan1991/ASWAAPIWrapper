@@ -56,35 +56,13 @@ namespace ASWAWrapper.Models
             }
         }
 
-        private string _endDate;
         [JsonProperty("endDate")]
-        public string EndDate
-        {
-            get
-            {
-                return _endDate;
-            }
-            set
+        public long EndDate { get; set; }
+        
 
-            {
-                _endDate = $"{value}";
-            }
-        }
-
-        private string _startate;
         [JsonProperty("startDate")]
-        public string StartDate
-        {
-            get
-            {
-                return _startate;
-            }
-            set
-
-            {
-                _startate = $"{value}";
-            }
-        }
+        public long StartDate { get; set; }
+        
 
         private string _bankAccountNumber;
         [JsonProperty("bankAccountNumber")]

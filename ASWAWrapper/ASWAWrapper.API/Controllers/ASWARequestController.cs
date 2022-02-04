@@ -67,5 +67,12 @@ namespace ASWAWrapper.API.Controllers
             var respnse = await _aswaRequestService.CheckPayAsync(token);
             return Ok(respnse);
         }
+
+        [HttpGet]
+        public async Task<IActionResult> GetContractStatus([FromQuery] string token)
+        {
+            string response = await _aswaRequestService.GetContractStatusAsync(token);
+            return Ok(response);
+        }
     }
 }

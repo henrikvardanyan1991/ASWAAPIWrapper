@@ -53,8 +53,7 @@ namespace ASWAWrapper.Common.Services
 
                 if (jObject["code"] != null)
                 {
-                    string message = jObject["message"].ToString();
-                    ProblemReporter.ReportUnprocessableEntity(message);
+                    ProblemReporter.ReportUnprocessableEntity(responseString);
                 }
             }
         }
@@ -69,8 +68,7 @@ namespace ASWAWrapper.Common.Services
                 JObject jObject = JObject.Parse(responseString);
                 if (jObject["code"] != null)
                 {
-                    string message = jObject["message"].ToString();
-                    ProblemReporter.ReportUnprocessableEntity(message);
+                    ProblemReporter.ReportUnprocessableEntity(responseString);
                 }
             }
 
@@ -97,8 +95,7 @@ namespace ASWAWrapper.Common.Services
                     JObject jObject = JObject.Parse(responseString);
                     if (jObject["code"] != null)
                     {
-                        string message = jObject["message"].ToString();
-                        ProblemReporter.ReportUnprocessableEntity(message);
+                        ProblemReporter.ReportUnprocessableEntity(responseString);
                     }
                 }
 
@@ -115,8 +112,8 @@ namespace ASWAWrapper.Common.Services
             JObject jObject = JObject.Parse(responseString);
             if (jObject["code"] != null)
             {
-                string message = jObject["message"].ToString();
-                ProblemReporter.ReportUnprocessableEntity(message);
+                //string message = jObject["message"].ToString();
+                ProblemReporter.ReportUnprocessableEntity(responseString);
             }
             response = JsonConvert.DeserializeObject<GetVehicleResponseModel>(responseString);
             return response;
@@ -126,16 +123,35 @@ namespace ASWAWrapper.Common.Services
         {
             string action = $"/webservicekiosk/contract/prepare/{token}?icId={companyID}&isTcAccepted=true";
             string response = await PutAsync(null, action);
+            if (response.StartsWith("{") && response.EndsWith("}")
+           || response.StartsWith("[") && response.EndsWith("]"))
+            {
+                JObject jObject = JObject.Parse(response);
+                if (jObject["code"] != null)
+                {
+                    ProblemReporter.ReportUnprocessableEntity(response);
+                }
+            }
+
+            //JObject jObject = JObject.Parse(response);
+
             return response;
 
         }
 
-
-
         public async Task PayAsync(PayRequestModel model)
         {
             string action = $"/webservicekiosk/payment/{model.Token}";
-            await PostAsync(model, action);
+            string responseString = await PostAsync(model, action);
+            if (responseString.StartsWith("{") && responseString.EndsWith("}")
+           || responseString.StartsWith("[") && responseString.EndsWith("]"))
+            {
+                JObject jObject = JObject.Parse(responseString);
+                if (jObject["code"] != null)
+                {
+                    ProblemReporter.ReportUnprocessableEntity(responseString);
+                }
+            }
         }
 
         public async Task<Boolean> CheckPayAsync(String token)
@@ -148,12 +164,29 @@ namespace ASWAWrapper.Common.Services
                 JObject jObject = JObject.Parse(responseString);
                 if (jObject["code"] != null)
                 {
-                    string message = jObject["message"].ToString();
-                    ProblemReporter.ReportUnprocessableEntity(message);
+                    ProblemReporter.ReportUnprocessableEntity(responseString);
                 }
             }
 
             return bool.Parse(responseString);
+        }
+
+        public async Task<string> GetContractStatusAsync(String token)
+        {
+            string action = $"/webservicekiosk/contract/{token}";
+            string responseString = await GetAsync(action);
+            if (responseString.StartsWith("{") && responseString.EndsWith("}")
+           || responseString.StartsWith("[") && responseString.EndsWith("]"))
+            {
+                JObject jObject = JObject.Parse(responseString);
+                if (jObject["code"] != null)
+                {
+                    ProblemReporter.ReportUnprocessableEntity(responseString);
+                }
+            }
+
+            return responseString;
+
         }
 
         private async Task<string> GetAsync(string action)
@@ -198,6 +231,7 @@ namespace ASWAWrapper.Common.Services
 
             return responseString;
         }
+
 
         private async Task<string> PostAsync(object model, string action)
         {
